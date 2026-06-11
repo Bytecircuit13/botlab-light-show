@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# drone video frame sequence (too large for git — host separately)
+/public/video-seq/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
