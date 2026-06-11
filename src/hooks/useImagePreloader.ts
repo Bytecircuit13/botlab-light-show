@@ -24,12 +24,12 @@ export function useImagePreloader(
     const urls: string[] = [];
     for (let i = startIdx; i <= endIdx; i += step) {
       const padded = i.toString().padStart(4, "0");
-      urls.push(`/video-seq/01${padded}.jpg`);
+      urls.push(`https://pub-8a00f88da0be4174a0956246c371fa3b.r2.dev/01${padded}.jpg`);
     }
 
     // Ensure the very last image is included for a complete scroll ending
     const lastPadded = endIdx.toString().padStart(4, "0");
-    const lastUrl = `/video-seq/01${lastPadded}.jpg`;
+    const lastUrl = `https://pub-8a00f88da0be4174a0956246c371fa3b.r2.dev/01${lastPadded}.jpg`;
     if (urls[urls.length - 1] !== lastUrl) {
       urls.push(lastUrl);
     }
